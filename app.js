@@ -14,7 +14,7 @@ $('demo-reset').onclick=()=>{step=0;finished=false;renderDemo();$('demo-options'
 document.addEventListener('click',event=>{const b=event.target.closest('[data-buy]');if(b)requestPurchase(b);});
 $('close-purchase').onclick=()=>$('purchase-dialog').close();$('back-to-demo').onclick=()=>{$('purchase-dialog').close();if(finished){step=0;finished=false;renderDemo();}$('demo').scrollIntoView({behavior:'smooth'});$('demo-options').querySelector('button')?.focus();};
 renderDemo();
-if($('price-value'))$('price-value').textContent=siteConfig.price===null?'Вартість уточнюється':siteConfig.currency==='UAH'?new Intl.NumberFormat('uk-UA').format(siteConfig.price)+' грн':new Intl.NumberFormat('uk-UA',{style:'currency',currency:siteConfig.currency,maximumFractionDigits:0}).format(siteConfig.price);
+if($('price-value'))$('price-value').textContent=siteConfig.currency==='UAH'?new Intl.NumberFormat('uk-UA').format(siteConfig.price)+' грн':new Intl.NumberFormat('uk-UA',{style:'currency',currency:siteConfig.currency,maximumFractionDigits:0}).format(siteConfig.price);
 if(siteConfig.author.name&&$('author-name'))$('author-name').textContent=siteConfig.author.name;
 if(siteConfig.author.bio&&$('author-bio'))$('author-bio').textContent=siteConfig.author.bio;
 

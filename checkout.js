@@ -1,6 +1,5 @@
 import { siteConfig } from './site-config.js';
 let adapter = null;
-// Future adapter must request a server-created checkout session. No merchant secret belongs here.
 export function setCheckoutAdapter(handler) {
   if (typeof handler !== 'function') throw new TypeError('Checkout adapter must be a function');
   adapter = handler;

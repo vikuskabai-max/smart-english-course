@@ -5,7 +5,7 @@ export const siteConfig = {
   price: 299,
   currency: 'UAH',
   author: { name: 'Вікторія Байдала', bio: null },
-  accessDuration: { months: 6, startsAt: 'purchase' },
+  accessDuration: { months: 6, startsAt: 'access-granted' },
   feedback: { automatic: true, personalTeacherReview: false },
-  technicalSupportEmail: null
+  technicalSupportEmail: 'smartenglishlama@gmail.com'
 };
