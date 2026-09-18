@@ -13,3 +13,17 @@ footer.legal-footer{display:block;padding:60px max(6vw,24px) 24px;background:#ed
 .author-quote p:first-child{font-size:20px;line-height:1.65}.author{align-items:start}
 
 .purchase-consent{font-size:14px;line-height:1.65;margin:20px 0}.purchase-consent a{text-decoration:underline}.seller-details a{overflow-wrap:anywhere}
+
+/* Purchase / WayForPay checkout */
+#purchase-dialog{max-width:520px}
+#purchase-dialog .eyebrow{margin-bottom:14px}
+#purchase-dialog h2{margin-bottom:14px}
+#purchase-form{display:grid;gap:10px;margin-top:24px}
+.purchase-label{font-size:14px;font-weight:700}
+.purchase-input{width:100%;min-height:52px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);padding:12px 14px;font:inherit}
+.purchase-input:focus{outline:3px solid #38a165;outline-offset:2px;border-color:transparent}
+.purchase-hint,.purchase-secure{font-size:14px;line-height:1.55;opacity:.78}
+.purchase-hint{margin:0}
+.purchase-error{min-height:24px;margin:0;color:#873810;font-size:14px;line-height:1.5}
+.purchase-submit{width:100%;margin-top:2px}
+.purchase-secure{margin:18px 0 0}
