@@ -22,3 +22,13 @@ function openLegalAnchor(){const id=location.hash.slice(1);const section=documen
 window.addEventListener('hashchange',openLegalAnchor);
 document.querySelectorAll('.legal-nav a').forEach(link=>link.addEventListener('click',()=>{const section=document.getElementById(link.hash.slice(1));if(section)section.open=true;}));
 openLegalAnchor();
+const paymentParams = new URLSearchParams(window.location.search);
+
+if (paymentParams.get('payment') === 'success') {
+  const successBlock = document.getElementById('payment-success');
+
+  if (successBlock) {
+    successBlock.hidden = false;
+    successBlock.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}
