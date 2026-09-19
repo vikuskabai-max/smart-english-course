@@ -27,3 +27,62 @@ footer.legal-footer{display:block;padding:60px max(6vw,24px) 24px;background:#ed
 .purchase-error{min-height:24px;margin:0;color:#873810;font-size:14px;line-height:1.5}
 .purchase-submit{width:100%;margin-top:2px}
 .purchase-secure{margin:18px 0 0}
+/* Payment success */
+
+#payment-success {
+  max-width: 760px;
+  margin: 48px auto;
+  padding: 48px 40px;
+  text-align: center;
+  background: #fdefc5;
+  border: 2px solid #38a165;
+  border-radius: 24px;
+  box-shadow: 0 18px 50px rgba(28, 81, 61, 0.12);
+}
+
+#payment-success[hidden] {
+  display: none;
+}
+
+#payment-success h2 {
+  margin: 0 0 18px;
+  color: #1c513d;
+  font-size: clamp(30px, 5vw, 46px);
+  line-height: 1.1;
+}
+
+#payment-success p {
+  margin: 10px 0;
+  color: #2b2b2b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#payment-success a {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 16px 34px;
+  background: #38a165;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+
+#payment-success a:hover {
+  transform: translateY(-2px);
+  opacity: .92;
+}
+
+@media (max-width: 650px) {
+  #payment-success {
+    margin: 28px 16px;
+    padding: 36px 22px;
+  }
+
+  #payment-success a {
+    width: 100%;
+  }
+}
